@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Gastos de água</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a class="logo" href="index.html">Controle o consumo de água</a>
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-list">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="consultas.html">Consulta</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="tabela">
+    <div class="container">
+      <h2>Cadastrar Consumo de Água</h2>
+      <form id="formulario">
+        <div class="form-group">
+          <label for="data">Data:</label>
+          <input type="date" id="data" name="data" required>
+        </div>
+        <div class="form-group">
+          <label for="valor">Valor do Consumo (m³):</label>
+          <input type="number" id="valor" name="valor" step="0.01" required>
+        </div>
+        <div class="form-group">
+          <label for="descricao">Descrição:</label>
+          <input type="text" id="descricao" name="descricao">
+        </div>
+        <button type="submit">Cadastrar</button>
+      </form>
+    </div>
+
+    <div id="dados"></div>
+  </main>
+  <script src="mobile-navbar.js"></script>
+  <script src="cadastro.js"></script>
+</body>
+
+</html>

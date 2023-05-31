@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Gastos de água</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a class="logo" href="index.html">Controle o consumo de água</a>
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-list">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="consultas.html">Consulta</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="tabela">
+    <div id="filters">
+      <input type="text" id="campoBusca" placeholder="Buscar...">
+      <select id="filtro">
+        <option value="data">Data</option>
+        <option value="valor">Valor</option>
+        <option value="descricao">Descrição</option>
+      </select>
+      <button id="filtrar">Filtrar</button>
+    </div>
+    <div id="dados">
+    </div>
+  </main>
+  <script src="mobile-navbar.js"></script>
+  <script src="consultas.js"></script>
+</body>
+</html>
