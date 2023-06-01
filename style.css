@@ -81,6 +81,7 @@ main {
   main {
     padding: 100px 10px;
     height: 100%;
+    overflow: hidden;
   }
 
   .nav-list {
